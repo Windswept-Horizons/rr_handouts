@@ -27,7 +27,7 @@ function Pay(player)
   local character = user.getUsedCharacter
   character.addCurrency(Config.PaymentCurrency, Config.PaymentAmount)
 
-  -- Core.NotifyRightTip(player, locale("received_payment", money), 4000) -- COYOTE NOTE: removes notification for player
+  -- Core.NotifyRightTip(player, locale("received_payment", money), 4000) -- COYOTE NOTE: removes notification for players
   -- local fullName = string.format("%s %s", character.firstname, character.lastname) -- COYOTE NOTE: moved to below
   -- Config.Log(locale("log_payment", fullName, money))  -- COYOTE NOTE: removed to avoid double printing on server console
 
